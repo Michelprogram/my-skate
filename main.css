@@ -1,0 +1,177 @@
+html,body{
+    width: 50%;
+    height: 50%;
+    background-color: lightBlue;
+}
+#Title{
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+    top: -50px;
+    left: 600px;
+}
+#Rassemblement{
+    #border: 1px solid #333;
+    width:1500px;
+    height:550px;
+}
+#Liste-planches-container{
+    width:500px;
+    height:520px;
+    font-size:20px;
+    #border: 1px solid #333;
+    position : relative;
+    left:150px;
+    top:-10px;
+    float:left;
+}
+
+#Boards-select{
+    width:500px;
+    font-size:17px;
+    border-radius:25px;
+    padding:25px;
+}
+::-webkit-scrollbar{
+    width:8px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius:8px;
+    background:#b0a178;
+}
+#Text1{
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position : relative;
+    left:-220px;
+    top:-20px;
+}
+#Affichage-des-planches{
+    background:white;
+    border-radius:25px;
+    float:right;
+    #border: 0px solid #333;
+    width:600px;
+    height:520px;
+    position:relative;
+    left:-100px;
+    top:-10px;
+}
+
+#Button{
+    border-radius:10px;
+    position:relative;
+    left:105%;
+    top:250px;
+    width:20%;
+}
+
+
+#Text2{
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position : relative;
+    left:200px;
+    top:-20px;
+}
+#Nom_court{
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    margin:12%;
+
+}
+#Nom_long{
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    margin:12%;
+
+
+}
+#Marque_court {
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    margin:2%;
+    position:relative;
+    top:156px;
+
+}
+
+#Marque_longue{
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    margin:2%;
+    position:relative;
+    top:156px;
+
+}
+
+#Prix{
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    margin:2%;
+    position:relative;
+    top:330px;
+
+}
+.Photo{
+    width:100%;
+    height:100%;
+    float:left;
+}
+
+.zoom{
+    height:80%;
+    width:45%;
+    position:relative;
+    left:54%;
+    top:-4%;
+    transition: transform 0.8s;
+}
+
+.zoom:hover {
+   border:1px solid black;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.3);
+}
