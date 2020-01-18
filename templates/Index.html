@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="/static/main.css" rel="stylesheet"  type="text/css"/>
+<link href="/static/icone.ico" rel="icon" />
+<head>
+<meta charset="UTF-8">
+<title>My Skate</title>
+</head>
+<body>
+<h1 id="Title">My Skate</h1>
+    <div id="Rassemblement">
+        <label id="Text1">Liste des boards !</label>
+        <label id="Text2">Planche sélectionner</label>
+        <div id="Liste-planches-container">
+            <form  method="POST" action="{{url_for('index') }}" >
+            <input id="Button" type="submit">
+                <select  name="selection" id="Boards-select" size="22" >
+                    <optgroup label="SkateDeluxe">
+                {%for skate in range(0,TailleDeluxe)%}
+                    <option name="{{SkateDeluxe_Nom[skate]}}" value="{{skate}}" >{{SkateDeluxe_Nom[skate]}}</option>
+                {%endfor%}
+                    </optgroup>
+                    <!--<optgroup label="Titus">
+                        {%for skate in range(0,TailleTitus)%}
+                            <option id="Titus" name="{{Titus_Nom[skate]}}" value="{{skate}}">{{Titus_Nom[skate]}}</option>
+                        {%endfor%}
+                    </optgroup>-->
+                </select>
+                </form>
+        </div>
+        <div id="Affichage-des-planches">
+            {% if SkateDeluxe_Nom[Place]|length >=25 %}
+            <label id="Nom_long">Nom : {{SkateDeluxe_Nom[Place]}}</label>
+            <br>
+            {% else %}
+            <label id="Nom_court">Nom : {{SkateDeluxe_Nom[Place]}}</label>
+            <br>
+            {% endif %}
+            {% if SkateDeluxe_Marque[Place]|length >=9 %}
+                <label id="Marque_longue">Marque : {{SkateDeluxe_Marque[Place]}}</label>
+                <br>
+            {% else %}
+            <label id="Marque_court">Marque : {{SkateDeluxe_Marque[Place]}}</label>
+            <br>
+            {% endif %}
+            <label id="Prix">Prix : {{SkateDeluxe_Prix[Place]}} €</label>
+            <div class="zoom">
+            <img class="Photo" src="{{SkateDeluxe_Lien[Place]}}" alt="Planche sélectionner">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
